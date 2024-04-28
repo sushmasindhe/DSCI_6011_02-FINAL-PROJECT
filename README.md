@@ -2,50 +2,23 @@
 # Project: Drowsiness Detection System
 ## Overview:
 The goal of the Drowsiness Detection System project is to address the growing issue of drowsy driving, a risky phenomena that puts road safety at serious risk all over the world. When someone drives when tired or drowsy, it hinders their ability to stay awake and respond rapidly to changing road conditions. This is known as drowsy driving. The goal of this research is to create a system that can identify driver drowsiness in real time, preventing accidents and maybe saving lives.
-Project Components:
-Dataset:
-5 V’s of Data; Volume, Variety, Velocity, Veracity, Value are checked to ensure right set of data is collected for the problem statement. The dataset consists of 20000 face images with age, gender, ethnicity as the features. It has an age span of 0 to 116 years. It is a structured, labeled dataset.
+## process
+### 1.Loading Data And Libraries
 
-Dataset link: https://susanqq.github.io/UTKFace/
+### 2.Image Processing
+ our preprocessing will include¶
+ Detecting faces from images
+ Drawing landmarks on our images to increase performance
+ Resizing our images
+ LabelEncoding
+ Image Augmantation
 
-Pre-Processing of Dataset images:
-Noise Filtering dataset images using various filters like Gaussian, mean, median, and Wiener filters is a common preprocessing step in many image processing and computer vision tasks. These filters can help reduce noise, improve image quality, or prepare images for further processing like feature extraction or classification.
+### 3. Splitting and testing the data 
 
-Evaluating the effectiveness of noise filtering techniques on images is crucial to determine how well the filters preserve image details while removing noise. The Structural Similarity Index (SSIM), Mean Squared Error (MSE), and Peak Signal-to-Noise Ratio (PSNR) are commonly used metrics for this purpose.
+### 4.Deep Learning Models:
+we use Batch Normalization
 
-Deep Learning Models:
-CNN Model: CNNs, or Convolutional Neural Networks, are a class of deep neural networks that are especially effective in visual imagery analysis. They have been successfully applied in various tasks such as image and video recognition, image classification, medical image analysis, and, gender classification and age prediction.
+### 5.Evaluation of models by calculating the Accuracy, precision, recall for Classification task and Mean Square Error, Mean Absolute Error for Regression task.
 
-VGG16: VGG16 model for gender classification and age prediction involves adapting a pre-trained convolutional neural network (CNN) to these specific tasks. This approach benefits from transfer learning, where knowledge from a model trained on a large dataset (like ImageNet) is leveraged to improve performance on a related but smaller dataset. VGG16 Model weights can be downloaded online and can be imported to the notebook.
-
-Process (step by step):
-The implementation is done on Kaggle platform.
-
-Importing all necessary libraries and modules.
-
-Importing the dataset by accessing the link.
-
-Converting images into dataframes.
-
-Performing Exploratory Data Analysis.
-
-Filtering the dataset images using the Gaussian, Mean, Median, Wiener filters.
-
-Storing filtered images and creating respective dataframes.
-
-Evaluating the effect of filtering by calculating the Structure Similarity Index, Peak Signal to Noise Ratio, Mean Square Error.
-
-Train-test splitting of the dataframes.
-
-Feature extraction of the dataframes.
-
-Model building for all 5 dataframes. Using the activation layers, optimization layers etc is done here.
-
-Training the models.
-
-Evaluation of models by calculating the Accuracy, precision, recall for Classification task and Mean Square Error, Mean Absolute Error for Regression task.
-
-Comparing the performance of all the models for both the architectures and checking the effect of filtering on the overall improvement of the performance of the built models.
-
-Conclusion:
-This project offers a comprehensive exploration of Gender Classification and Age Prediction using deep learning, providing a valuable resource for researchers and students interested in computer vision, deep learning, and image processing. The comparison of different models offers insights into their strengths and weaknesses, guiding future research in the field. The well-documented code and usage instructions ensure accessibility and reproducibility for other researchers and enthusiasts.
+### 6.Conclusion:
+In conclusion, our method of detecting driver fatigue with CNNs and facial landmark detection offers a workable solution to enhance traffic safety. By accurately classifying drivers into "Active" and "Fatigue" stages based on facial expressions, our technology addresses a significant issue in real-time. It performs better than traditional methods and sends timely alerts to drivers and car monitoring systems, according to extensive testing. It might have major consequences for industry and society, possibly even saving lives and preventing accidents. Further research could focus on enhancing the model architecture, including additional functionalities, and optimizing deployment in real-world driving scenarios. Collaboration with stakeholders and regulatory bodies will be crucial for broader adoption. Our study basically shows the ground-breaking potential of AI-driven solutions in addressing
