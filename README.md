@@ -4,7 +4,7 @@
 A drowsiness detection system is a technology that monitors a person's level of alertness during activities like driving. It uses sensors to track indicators such as eye movements, facial expressions, and steering behavior. Machine learning algorithms analyze this data to detect signs of drowsiness, triggering alerts to the driver to prevent accidents.
 
 ## Project Components:
-1.Dataset:
+Dataset:
 we have taken our dataset from kaggle
 2.Image Processing
 3.Splitting the data
