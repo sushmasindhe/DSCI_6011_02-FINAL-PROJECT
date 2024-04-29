@@ -6,14 +6,16 @@ A drowsiness detection system is a technology that monitors a person's level of 
 ## Project Components:
 ### Dataset:
 we have taken our dataset from kaggle
-
-Pre-Processing of Dataset images:
-Noise Filtering dataset images using various filters like Gaussian, mean, median, and Wiener filters is a common preprocessing step in many image processing and computer vision tasks. These filters can help reduce noise, improve image quality, or prepare images for further processing like feature extraction or classification.
-
-Evaluating the effectiveness of noise filtering techniques on images is crucial to determine how well the filters preserve image details while removing noise. The Structural Similarity Index (SSIM), Mean Squared Error (MSE), and Peak Signal-to-Noise Ratio (PSNR) are commonly used metrics for this purpose.
-
-Deep Learning Models:
-CNN Model: CNNs, or Convolutional Neural Networks, are a class of deep neural networks that are especially effective in visual imagery analysis. They have been successfully applied in various tasks such as image and video recognition, image classification, medical image analysis, and, gender classification and age prediction.
+1.We have done Image Processing
+  our preprocessing will include¶
+  Detecting faces from images
+  Drawing landmarks on our images to increase performance
+  Resizing our images
+  LabelEncoding
+  Image Augmantation
+2.Splitting the data
+3.Data Augmentation
+4.Deep Learning Models
 
 VGG16: VGG16 model for gender classification and age prediction involves adapting a pre-trained convolutional neural network (CNN) to these specific tasks. This approach benefits from transfer learning, where knowledge from a model trained on a large dataset (like ImageNet) is leveraged to improve performance on a related but smaller dataset. VGG16 Model weights can be downloaded online and can be imported to the notebook.
 
